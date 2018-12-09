@@ -1,0 +1,18 @@
+
+<mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows">
+    <!--[style.background]="tile.color">-->
+  <div class="example-card">
+    <img src="{{tile.url}}">
+    <h3> {{tile.title}}</h3>
+    <p>{{tile.text}}</p>
+    <div class="example-button-row">
+      <button mat-raised-button color="primary">Primary</button>
+
+    </div>
+  </div>
+  </mat-grid-tile>
+</mat-grid-list>
