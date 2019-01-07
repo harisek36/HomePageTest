@@ -20,6 +20,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { TableComponent } from './table/table.component';
+
+import {MatTableModule} from '@angular/material/table';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
 
 
 
@@ -33,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     CompanyOverviewComponent,
     CompanyHeaderOptionsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,9 @@ import { FooterComponent } from './footer/footer.component';
     MatDividerModule,
     MatMenuModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
